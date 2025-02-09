@@ -4,6 +4,8 @@ import './FoodOrderApp.css';
 import HeadImg from '../assets/header-img.png';
 import Remove from '../assets/Remove.png'
 import Close from '../assets/Close.png'
+import NextArrow from '../assets/arrow-forward.png';
+import BackArrow from '../assets/arrow-back.png';
 
 const FoodOrderApp = ({selectedItems, setSelectedItems, sidebarOpen, setSidebarOpen}) => {
   // const [selectedItems, setSelectedItems] = useState([]);
@@ -131,8 +133,8 @@ const FoodOrderApp = ({selectedItems, setSelectedItems, sidebarOpen, setSidebarO
            </div>
 
             <div className="footer-buttons">
-              <button className="back-button">Take me back</button>
-              <button className="next-button">Next Step</button>
+              <button className="back-button"><span className="button-text">Take me back </span><span className="back-arrow"><img src={BackArrow} alt="" /></span></button>
+              <button className="next-button"><span className="button-text">Next Step </span><span className="next-arrow"><img src={NextArrow} alt="" /></span></button>
             </div>
           </div>
         </div>
