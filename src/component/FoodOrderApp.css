@@ -132,14 +132,13 @@ body {
 }
 
 .sidebar-item-info p {
-  margin: 0;
+  margin-right: 1rem;
 }
 
 .quantity-controls {
   display: flex;
   align-items: center;
   justify-content: center;
-  margin: 0 auto;
   gap: 0.5rem;
 }
 
