@@ -1,0 +1,228 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Poppins", serif;
+}
+
+/* Header Styles */
+.header {
+  position: relative;
+  height: 12rem;
+}
+
+.header img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.close-button {
+  position: absolute;
+  top: 1rem;
+  right: 1rem;
+  background-color: #fc8a06;
+  padding: 0.5rem;
+  border-radius: 50%;
+  border: none;
+  cursor: pointer;
+  box-shadow: -4px 0 8px rgba(0, 0, 0, 0.3);
+}
+
+.close-button img {
+  width: 40px;
+  height: 40px;
+}
+
+/* Title Section Styles */
+.title-section {
+  padding: 1rem;
+  border-bottom: 1px solid #e5e7eb;
+}
+
+.title-section .breadcrumb {
+  font-size: 0.875rem;
+  color: #4b5563;
+}
+
+.title-section h2 {
+  font-size: 1.125rem;
+  font-weight: 500;
+  margin-top: 0.5rem;
+}
+
+/* Sidebar Styles */
+.sidebar {
+  position: fixed;
+  top: 0;
+  right: 0;
+  width: 42rem;
+  height: 100vh;
+  background-color: white;
+  box-shadow: -2px 0 8px rgba(0, 0, 0, 0.1);
+  padding: 1rem;
+  display: flex;
+  flex-direction: column;
+}
+
+.sidebar-title {
+  font-size: 1.25rem;
+  font-weight: 600;
+  margin-bottom: 1rem;
+}
+
+.sidebar-empty {
+  text-align: center;
+  color: #6b7280;
+}
+
+.sidebar-items {
+  flex: 1;
+  overflow-y: auto;
+}
+
+.sidebar-item {
+  padding: 1rem;
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  margin-bottom: 0.5rem;
+  margin-left: 0.5rem;
+  margin-right: 0.5rem;
+  border-radius: 0.5rem;
+  background-color: #d9d9d999;
+  flex: 1 1 calc(50% - 1rem);
+}
+
+.sidebar-item:hover,
+.sidebar-item:active {
+  background-color: #1e293b;
+  color: white;
+  transition: all 0.3s ease-in-out;
+}
+
+.sidebar-item:hover .quantity-button {
+  background-color: white; 
+  color: #1e293b; 
+}
+
+.sidebar-item:default {
+  background-color: #f3f4f6;
+}
+
+.sidebar-image {
+  width: 3rem;
+  height: 3rem;
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+.sidebar-item-info {
+  flex: 1;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.sidebar-item-info p {
+  margin: 0;
+}
+
+.quantity-controls {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.quantity-button {
+  width: 2rem;
+  height: 2rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  background-color: #1e293b;
+  color: white;
+  cursor: pointer;
+  transition: background-color 0.3s ease-in-out, color 0.3s ease-in-out;
+}
+
+.delete-button {
+  background: none;
+  border: none;
+  cursor: pointer;
+  color: #ef4444;
+}
+
+/* Footer Styles */
+.footer {
+  border-top: 1px solid #e5e7eb;
+  padding: 1rem;
+}
+
+.total-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.total-pay {
+  width: fit-content;
+  background-color: #f97316;
+  color: white;
+  border-radius: 0.5rem;
+  padding: 0.75rem;
+  margin-bottom: 1rem;
+}
+
+.total-pay .total-amount {
+  display: flex;
+  gap: 1rem;
+  align-items: center;
+}
+
+.total-price {
+  font-size: 1.8rem;
+  font-weight: 500;
+
+}
+
+.delivery-info {
+  font-size: 0.75rem;
+  opacity: 0.75;
+}
+
+.footer-buttons {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  gap: 1rem;
+}
+
+.footer-buttons button {
+  /* flex: 1; */
+  padding: 0.75rem 1.5rem;
+  border-radius: 0.5rem;
+}
+
+.footer-buttons .back-button {
+  background-color: white;
+  border: 1px solid #d1d5db;
+  border: none;
+  text-decoration: underline;
+  font-weight: 700;
+  font-size: 1rem;
+}
+
+.footer-buttons .next-button {
+  background-color: #16a34a;
+  color: white;
+  border: none;
+  font-weight: 700;
+  font-size: 1rem;
+}
